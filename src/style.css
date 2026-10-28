@@ -19,6 +19,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'microgrammaBold Fallback';
+  src: url('/fonts/microgramma-bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Obrive Authentic Color Palette */
   --obrive-primary: #074139;
@@ -120,8 +128,8 @@ a {
 }
 
 .section-pad {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 /* Section Background Variations */
@@ -161,29 +169,31 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
 }
 
 .section-header-center .obrive-badge {
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 20px;
-}
-
-.section-header-center h2 {
-  font-size: clamp(28px, 4.2vw, 46px);
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  max-width: 900px;
   margin-bottom: 16px;
 }
 
+.section-header-center h2 {
+  font-family: microgrammaBold, "microgrammaBold Fallback", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  line-height: 24px !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin-bottom: 12px;
+}
+
 .section-header-center p {
-  font-size: clamp(13px, 1.3vw, 15px);
+  font-size: 13px;
   color: var(--obrive-text-muted);
-  max-width: 720px;
-  line-height: 1.8;
+  max-width: 680px;
+  line-height: 1.7;
 }
 
 /* ==========================================================================
